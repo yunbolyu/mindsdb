@@ -1,6 +1,10 @@
 name: MindsDB Release Candidate Acceptance Tests
 
 on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+      - '**/*.md'
   pull_request:
     branches: [stable]
     paths-ignore:
